@@ -1,6 +1,6 @@
 import {MDBTable, MDBTableHead, MDBTableBody, MDBListGroupItem, MDBBtn} from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
-import "./Home.css"
+import "../styles/Home.css"
 
 function Submit(props){
 
@@ -42,9 +42,7 @@ function Submit(props){
                     <Link onClick={sendData} className='text-white'  to={props.link}>Submit</Link>
                 </MDBBtn>
             </MDBTable>
-
         </div>
-
     );
 }
 export default Submit
