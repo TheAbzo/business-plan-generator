@@ -21,3 +21,8 @@
     margin: 5px;
     position: relative;
 }
+
+.center {
+    margin: auto;
+    width: 50%;
+}

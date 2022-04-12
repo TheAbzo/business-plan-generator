@@ -4,6 +4,7 @@ import Home from "./components/Home"
 import Submit from "./components/Submit";
 import Section from "./components/Section";
 import ParticlesBg from "particles-bg";
+import Thankyou from "./components/ThankYou";
 
 
 function App() {
@@ -43,7 +44,8 @@ function App() {
               <Route exact path = "/" element = {<Home/>}/>
               <Route path = "/first-section" element={ <Section data = {obA} changeState = {changeState} link = "/second-section" />}/>
               <Route path = "/second-section" element={ <Section data= {obB} changeState = {changeState} link = "/submit" />}/>
-              <Route path = "/submit" element={ <Submit data = {data} link = "/ " />}/>
+              <Route path = "/submit" element={ <Submit data = {data} link = "/thank-you " />}/>
+              <Route path = "/thank-you" element={ <Thankyou />}/>
           </Routes>
       </div>
   );
