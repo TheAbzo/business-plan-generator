@@ -5,7 +5,6 @@ import "./Home.css";
 function Home() {
     return(
         <div>
-          <ParticlesBg type="circle" bg={true} />
             <MDBBtn className='mx-2 mid-button-child' color='info'>
                 Generate Business Plan
             </MDBBtn>

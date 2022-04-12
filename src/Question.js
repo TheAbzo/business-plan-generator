@@ -8,8 +8,8 @@ function Question(props) {
             <h1> {props.question}</h1>
                 <MDBCol md='10' >
                     <MDBBtnGroup className="mid-button-parent">
-                        <MDBRadio  btn btnColor='info' id='btn-radio' name='options' wrapperTag='span' disabled={props.inactive} label={props.answer1} defaultChecked/>
-                        <MDBRadio  btn btnColor='info' id='btn-radio1' name='options' wrapperTag='span'  disabled={props.inactive} label={props.answer2} />
+                        <MDBRadio  btn btnColor='info' id={props.id +'1'} name={props.id} wrapperTag='span' disabled={props.inactive} label={props.answer1} defaultChecked/>
+                        <MDBRadio  btn btnColor='info' id={props.id +'2'} name={props.id} wrapperTag='span'  disabled={props.inactive} label={props.answer2} />
                     </MDBBtnGroup>
                 </MDBCol>
 
