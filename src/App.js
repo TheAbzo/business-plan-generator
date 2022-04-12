@@ -1,8 +1,13 @@
 import './App.css';
+import ParticlesBg from "particles-bg";
 
 function App() {
   return (
-    <h1> Hello </h1>
+      <div>
+        <ParticlesBg type="circle" bg={true} />
+        <h1> Hello </h1>
+      </div>
+
   );
 }
 
