@@ -1,0 +1,14 @@
+.mid-button-parent{
+
+    position: relative;
+    z-index: 100;
+
+}
+
+.mid-button-child{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
