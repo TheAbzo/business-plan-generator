@@ -6,6 +6,11 @@ function Section(props){
 
     const QA = props.data;
 
+    function changeParent(keyD,valueD){
+        props.changeState(keyD,valueD)
+        console.log("section updated")
+    }
+
     let listItem =    Object.entries(QA)
             .map( ([name, answers]) =>
                 <MDBListGroupItem key = {name}><Question question = {name}
@@ -13,6 +18,7 @@ function Section(props){
                               answer2 = {answers[1]}
                               inactive = {answers[2]}
                                   id   = {answers[3]}
+                     changeGrandParent = {changeParent}
                 />
                 </MDBListGroupItem> );
 
