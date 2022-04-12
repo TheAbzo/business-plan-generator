@@ -1,8 +1,8 @@
 import './App.css';
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Home"
-import Question from "./Question"
+import Submit from "./Submit";
 import Section from "./Section";
 import ParticlesBg from "particles-bg";
 
@@ -50,7 +50,8 @@ function App() {
           <Routes>
               <Route exact path = "/" element = {<Home/>}/>
               <Route path = "/first-section" element={ <Section data = {obA} changeState = {changeState} />}/>
-              <Route path = "/second-section" element={ <Section data={ obB} changeState = {changeState} />}/>
+              <Route path = "/second-section" element={ <Section data= {obB} changeState = {changeState} />}/>
+              <Route path = "/submit" element={ <Submit />}/>
           </Routes>
       </div>
   );
