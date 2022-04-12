@@ -12,3 +12,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.main-button {
+    display: block;
+    margin: auto;
+}
+
+.submit-button {
+    margin: 5px;
+    position: relative;
+}

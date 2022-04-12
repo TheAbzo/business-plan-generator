@@ -49,9 +49,9 @@ function App() {
           <ParticlesBg type="circle" bg={true} />
           <Routes>
               <Route exact path = "/" element = {<Home/>}/>
-              <Route path = "/first-section" element={ <Section data = {obA} changeState = {changeState} />}/>
-              <Route path = "/second-section" element={ <Section data= {obB} changeState = {changeState} />}/>
-              <Route path = "/submit" element={ <Submit />}/>
+              <Route path = "/first-section" element={ <Section data = {obA} changeState = {changeState} link = "/second-section" />}/>
+              <Route path = "/second-section" element={ <Section data= {obB} changeState = {changeState} link = "/submit" />}/>
+              <Route path = "/submit" element={ <Submit data = {data} link = "/ " />}/>
           </Routes>
       </div>
   );

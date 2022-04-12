@@ -1,17 +1,20 @@
+import {MDBBtn, MDBListGroup, MDBListGroupItem} from 'mdb-react-ui-kit';
+import { Link } from "react-router-dom";
 import Question from "./Question";
 import "./Home.css"
-import { MDBListGroup, MDBListGroupItem } from 'mdb-react-ui-kit';
+
 
 function Section(props){
 
     const QA = props.data;
+    let x = Object.entries(QA)
 
     function changeParent(keyD,valueD){
         props.changeState(keyD,valueD)
         console.log("section updated")
     }
-    let x = Object.entries(QA)
-    let listItem =    Object.entries(QA)
+
+    let listItem =  Object.entries(QA)
             .filter(([name, answers]) => {
                 if(answers[3] == 2 && x[0][1][4] == "no") return false; return [name, answers];} )
             .map( ([name, answers]) =>
@@ -31,9 +34,16 @@ function Section(props){
     }
     // console.log(listItem)
     return(
-        <MDBListGroup className={"mid-button-child"}>
-            {listItem}
-        </MDBListGroup>
+
+        <div>
+            <MDBListGroup className={"mid-button-child "}>
+                {listItem}
+                <MDBBtn className='submit-button w-25' color='info'>
+                    <Link className='text-white'  to={props.link}>next</Link>
+                </MDBBtn>
+            </MDBListGroup>
+
+        </div>
 
     );
 }
